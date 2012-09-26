@@ -1,0 +1,6 @@
+-corefreq 2000000000
+-logfile test.log
+-stats test.stats
+-stopinsns 10m
+-kill-after-run
+-machine shared_l3
