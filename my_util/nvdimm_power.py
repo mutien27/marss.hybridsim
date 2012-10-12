@@ -53,8 +53,8 @@ for line in fin:
     if tp is not None:
         total_power = (total_power + float(tp.group(1))) / num_package
 
-print >>fout1, "%f %f %f %f" %(total_power, idle_power, access_power, erase_power)
-print >>fout2, "%f %f %f %f" %(total_energy, idle_energy, access_energy, erase_energy)
+print >>fout1, "%f %f %f %f" %(total_power, idle_power, access_power, erase_power) # mW
+print >>fout2, "%f %f %f %f" %(total_energy*1E-3, idle_energy*1E-3, access_energy*1E-3, erase_energy*1E-3) # J
 
 fin.close()
 fout1.close()
